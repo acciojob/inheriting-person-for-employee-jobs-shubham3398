@@ -8,9 +8,9 @@ Person.prototype.greet = function(){
     let str = `Hello, my name is ${this.name}, I am ${this.age} years old.`;
 	console.log(str);
 }
-
+Employee.prototype = Object.create(Person.prototype);
 Employee.prototype.constructor = Person;
-Employee.prototype = Person.prototype;
+
 
 function Employee(name, age, jobTitle) {
     Person.call(this, name, age);
