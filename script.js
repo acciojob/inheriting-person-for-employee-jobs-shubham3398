@@ -21,9 +21,9 @@ Employee.prototype.jobGreet = function () {
     console.log(str);
 }
 
+// Example instantiation (commented out for now)
 // let emp = new Employee("arvind", 26, "SDE");
 
 // Do not change code below this line
 window.Person = Person;
 window.Employee = Employee;
-
